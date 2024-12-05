@@ -8,6 +8,12 @@ import FacultyLogin from './components/FacultyLogin';
 import CreateStudent from './components/CreateStudent';
 import CreateSubject from './components/CreateSubject';
 import AdminDashboard from './components/AdminDashboard';
+import ChatRoomStudent from './components/ChatRoomStudent';
+import GetPDFs from './components/GetPDFs';
+import LeaderBoard from './components/LeaderBoard';
+import StudentDashboard from './components/StudentDashboard';
+import ViewAttendance from './components/ViewAttendance';
+import ViewMarks from './components/ViewMarks';
 
 function App() {
   return (
@@ -29,6 +35,12 @@ function App() {
           <Route path="/create-student" element={<CreateStudent />} />
           <Route path="/create-subject" element={<CreateSubject />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/chatroom" element={<ChatRoomStudent />} />
+          <Route path="/getLeaderboard" element={<LeaderBoard />} />
+          <Route path="/getPDFs" element={<GetPDFs />} />
+          <Route path="/viewMarks" element={<ViewMarks />} />
+          <Route path="/viewAttendance" element={<ViewAttendance />} />
         </Routes>
       </Router>
     </Box>
