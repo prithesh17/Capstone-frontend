@@ -14,6 +14,11 @@ import LeaderBoard from './components/LeaderBoard';
 import StudentDashboard from './components/StudentDashboard';
 import ViewAttendance from './components/ViewAttendance';
 import ViewMarks from './components/ViewMarks';
+import FacultyDashboard from './components/FacultyDashboard';
+import UploadPdfs from './components/UploadPdfs';
+import UpdateAttendence from './components/UpdateAttendence';
+import UpdateMarks from './components/UpdateMarks';
+import ChatRoomFaculty from './components/ChatRoomFaculty';
 
 function App() {
   return (
@@ -41,6 +46,11 @@ function App() {
           <Route path="/getPDFs" element={<GetPDFs />} />
           <Route path="/viewMarks" element={<ViewMarks />} />
           <Route path="/viewAttendance" element={<ViewAttendance />} />
+          <Route path="/faculty-dashboard" element={<FacultyDashboard />} />
+          <Route path="/updateAttendance" element={<UpdateAttendence />} />
+          <Route path="/updateMarks" element={<UpdateMarks />} />
+          <Route path="/chatroomfaculty" element={<ChatRoomFaculty />} />
+          <Route path="/uploadPDFs" element={<UploadPdfs />} />
         </Routes>
       </Router>
     </Box>
